@@ -1,0 +1,83 @@
+body{
+    background-color:rgb(238, 227, 197);
+}
+
+.header{
+    background-size: cover;
+    font-size: 60px;
+    font-family: Impact;
+    text-align: center;
+    padding-right: 75px;
+    padding-top: 0px;
+    color: brown;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(210, 229, 247);
+    padding: 14px 16px;
+}
+
+li{
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    padding: 12px 14px;
+
+}
+
+.aktoldal{
+    background-color: rgb(210, 229, 247);
+}
+
+.navbar-brand{
+    background-color: rgb(181, 219, 255);
+    margin: 0px;
+    padding: 11px 16px;
+}
+
+.kiskep{
+    width: 100% ;
+    border-radius: 10% ;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    margin-left: 10px;
+}
+
+footer{
+    background-color: rgb(181, 219, 255);
+    color: black;
+    border-radius: 10px 10px 5px 5px;
+}
+footer p{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#evszam{
+    padding-left: 15px;
+    float: left;
+}
+
+#osztaly{
+    padding-right: 15px;
+    float: right;
+}
+
+@media screen and (max-width: 500px){
+    #evszam, #osztaly{
+        float: none;
+        display: block;
+        padding: 0px;
+    }
+
+.header{
+        font-size: 35px;
+ }
