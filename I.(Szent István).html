@@ -10,40 +10,46 @@
         <link rel="stylesheet" href="style.css">
         <title>Géza fejedelem és I. Szent István feladatai</title>
         
-    </head>
+	</head>
+<!-- Ugrás a lap tetejére -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow36.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+	
+<!-- Icon betöltése -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<ul>
+	<li><a href="főoldal.html">Kezdőlap</a></li>
+	<li><a href="Géza.html">Géza fejedelem</a></li>
+	<li><a href="video.html">Összegzés</a></li>
+</ul>
+
+<!--<div class="sidebar">
+  <a href="főoldal.html"><i class="fa fa-fw fa-home"></i> Kezdőlap</a>
+  <a href="Géza.html"><i class="fa fa-fw fa-wrench"></i>Géza fejedelem</li></a>
+  <a href="video.html"><i class="fa fa-camera"></i> Összegzés</a>-->
+</div>
 
     <body id="eleje6">
         <div class="container">
             <div class="header">
-                Géza fejedelem és I. Szent István feladatai
             </div>
-<!---
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                
-                <button class="navbar-toggler" data-bs-toggle ="collapse" data-bs-target ="#navbarMenu">
-                    <span class="navbar-toggler-icon"></span>
-
-                </button>
-
-                <div class="collapse navbar-collapse"  id="navbarMenu">
-                    <ul class="navbar-nav">
-						<li class="nav-item"><a href="főoldal.html">Főoldal</a></li>
-                        <li class="nav-item"><a href=".html">972-997.</a></li>
-                        <li class="nav-item"><a href=".html">1001.január 1.</a></li>
-                    </ul>
-                </div>
-
-            </nav> -->
 
             <h1>I. (Szent) István magyar király</h1>
 		<p>I.István az utolsó magyar fejedelem és az első magyar király. Géza fejedelem és Sarolt fejedelemasszony fia.<br/>
 			A keresztény magyar állam megteremtőjeként a magyar történelem egyik legkiemelkedőbb alakja.<br/> 
 			A katolikus egyház egyházszervezői tevékenysége miatt szenté avatta és Magyarország fő védőszentje lett.</p>
-		<table>
+
+		<P style="FONT-WEIGHT: bold; FLOAT: left; WIDTH: 300px;">
+			<IMG title="I.(Szent) István"
+			height=300 width=278 src="I.Szent István.jpg" img class="kiskep1">
+			<P style="TEXT-ALIGN: justify">
+
+		<!--<table>
 			<td>
-				<img class="kiskep" src="I.Szent István.jpg" title="I.(Szent) István" width="300" height="300">
+				<img class="kiskep1" style="float: left" src="I.Szent István.jpg" title="I.(Szent) István" width="300" height="300">
 			</td>
-		</table>
+		</table>-->
 
 		<h2>Fejedelemsége</h2>
 		<p>István atyja életében a Nyitrai Hercegség ura volt, majd 997-ben, Géza fejedelem halála után követte őt a fejedelmi székben. 
@@ -52,29 +58,32 @@
 		<h2>Uralkodása</h2>
 		<p>1001. január 1-jén koronázták királlyá Esztergomban a feltehetőleg II. Szilveszter pápától kapott koronával, amely azonban nem azonos a ma Szent Korona néven ismert uralkodói jelvénnyel. 
 			Ezzel megalakult a keresztény, független Magyar Királyság. Fia, Imre herceg 1031-ben egy vadászaton halt meg. Utódaként végül unokaöccsét, Orseolo Pétert nevezte meg.</p>
-			<table>
-				<td>
-					<img class="kiskep" src="Korona.jpg" title="Korona">
-				</td>
-			</table>
+			<P style="FONT-WEIGHT: bold; FLOAT: left; WIDTH: 350px; COLOR: maroon">
+				<IMG title="pénzérme"
+				height=200 width=300 src="Pénzveretése.jpg" img class="kiskep1">
+				<P style="TEXT-ALIGN: justify">
 
 		<h2>Pénzveretése</h2>
 		<p>A kora Árpád-kori Magyarország pénzverése a magyar pénztörténet legrégebbi fejezete. Habár pénzérmékkel már az államalapítást megelőzően is találkoztak a magyarok, a pénzverést az államalapítás részeként Szent István király indította meg. 
 			Az ekkor átvett dénárrendszer a fiatal magyar állam nyugati irányultságának egyértelmű jele.</p>
-			<table>
+			<!--<table>
 				<td>
 					<img class="kiskep" src="Pénzveretése.jpg" title="pénzérme">
 				</td>
-			</table>
+			</table>-->
 
 		<h2>Egyházpolitikája</h2>
 		<p>István Géza és Sarolt egyházpolitikájának folytatásaként püspökséget szervezett, falvaiban templomokat építtetett. 
 			A feltehetően istváni alapítású egyházmegyék a következők: az esztergomi, a veszprémi, a kalocsai, az egri, a győri, a pécsi, a váci, a csanádi, a bihari és az erdélyi.
 			Az egyház és az új hit terjedését törvényei is védik és segítik elő: pl. Törvényben írja elő, hogy tíz falu építsen egy templomot bevezeti a kötelező 1/10 fizetését az Egyház számára és az egyházi szokások be nem tartását bünteti.</p>
-			<table>
+			<P style="FONT-WEIGHT: bold; FLOAT: left; WIDTH: 550px; COLOR: maroon">
+				<IMG title="Egyházmegyék"
+				height=400 width=500 src="Egyházmegyék.png" img class="kiskep1">
+				<P style="TEXT-ALIGN: justify">
+			<!--<table>
 				<td>
 					<img class="kiskep" src="Egyházmegyék.png" title="Egyházmegyék">
-				</td>
+				</td>-->
 			</table>
 
 		<h2>Törvényei</h2>
@@ -91,17 +100,15 @@
 		<h2>Ünnepe</h2>
 		<p>Magyarországon minden év augusztus 20-án állami ünnepként, mint István király szentté avatásának napját ünnepelik meg. 
 			Más országokban ,mivel halála napján Nagyboldogasszony ünnepe van, ezért az azt követő napon, augusztus 16-án ünneplik.</p>
-			<table>
+			<P style="FONT-WEIGHT: bold; WIDTH: 450px; padding-left: 450px;">
+				<IMG title="I.István szobor"
+				height=200 width=400 src="Ünnepe.jpg" img class="kiskep1">
+				<P style="TEXT-ALIGN: justify">
+			<!--<table>
 				<td>
 					<img class="kiskep" src="Ünnepe.jpg" title="I.István szobor">
 				</td>
-			</table>
-
-		
-	</body>
-</html>
-            </style>   
-            <p><a href="#eleje6" vissza az oldal elejére>Ugrás az oldal elejére</a></p>
+			</table>-->
 
         </div>
     </body>
